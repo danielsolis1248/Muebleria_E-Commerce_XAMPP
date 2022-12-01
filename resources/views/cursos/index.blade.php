@@ -3,5 +3,5 @@
 @section('title', 'Cursos')
     
 @section('content')
-    <h1>Bienvenido a la pagina cursos</h1>
+    <h1>Bienvenido al index 🚪</h1>
 @endsection
