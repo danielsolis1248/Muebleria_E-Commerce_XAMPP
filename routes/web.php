@@ -2,6 +2,10 @@
 use App\Http\Controllers\CursoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminViewController;
+use App\Http\Controllers\AddProductController;
+
+use Illuminate\Routing\Route as RoutingRoute;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +25,10 @@ Route::controller(CursoController::class)->group(function(){
     Route::get('cursos/create', 'create');
     Route::get('cursos/{curso}', 'show');
 });
+
+
+Route::get('admin-view', AdminViewController::class);
+Route::get('admin-view/agregar-producto', AddProductController::class);
 
 
 
